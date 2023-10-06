@@ -82,10 +82,10 @@ img {
 
 
 @media (max-width: 400px) {
-
     header {
-        width: 390px;
+        width: 250px;
     }
+
     .backBtn {
         position: absolute;
         top: 50px;
