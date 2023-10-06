@@ -86,6 +86,15 @@ img {
         width: 250px;
     }
 
+    .title  {
+        font-size: 15px;
+    }
+    .head-title {
+        font-size: 25px;
+    }
+    .title_text {
+        font-size: 15px;
+    }
     .backBtn {
         position: absolute;
         top: 50px;
