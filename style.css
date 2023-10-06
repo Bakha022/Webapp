@@ -89,7 +89,7 @@ img {
     .backBtn {
         position: absolute;
         top: 50px;
-        left: 0;
+        left: 100px;
         text-transform: capitalize;
         padding: 5px;
     }
