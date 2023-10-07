@@ -1,7 +1,11 @@
 // Get the container
 
 let container = document.querySelector('.container'),
-head_title = document.querySelector('.head-title')
+head_title = document.querySelector('.head-title'),
+tg = window.Telegram.WebApp
+let card_items_person;
+
+tg.expand()
 
 // render function to list the category
 function render(persons) {
@@ -33,6 +37,7 @@ function category_id(id) {
     container.innerHTML = ""
     
     let card_item = category[id].card
+    card_items_person = card_item
 
     container.innerHTML += `
         <button class="backBtn" onclick="back()">back</button>
@@ -45,7 +50,7 @@ function category_id(id) {
         // We drew the card_item using the objects in the item
         card_item.map(item => {
             return container.innerHTML += `
-            <div class="card" onclick="">
+            <div class="card" onclick="send_data(${item.card_id})">
                         <div class="card_content">
                             <img class="card_img" src="${item.card_img}"/>
                             <p class="title title_text">${item.first_name}</p>
@@ -66,4 +71,14 @@ function back() {
     head_title.innerText = "Category"
 
     render(category)
+}
+
+function send_data(id) {
+   let card_person_id = card_items_person[id-1]
+
+   const data = {
+        title: card_person_id.first_name,
+   }
+
+   tg.send_data(JSON.stringify(data));
 }
