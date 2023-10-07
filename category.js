@@ -86,6 +86,10 @@ let category = [
         img: './assets/famous people.png',
         card: [
             {
+                first_name: 'Jimmy Donaldson',
+                card_img: './assets/famous people/jimmy donaldson.webp'
+            },
+            {
                 first_name: 'Albert Einstein',
                 card_img: './assets/famous people/albert einstein.jpg'
             },
@@ -100,10 +104,6 @@ let category = [
             {
                 first_name: 'Elon Musk',
                 card_img: './assets/famous people/elon musk.jpg'
-            },
-            {
-                first_name: 'Jimmy Donaldson',
-                card_img: './assets/famous people/jimmy donaldson.webp'
             },
         ]
     },
