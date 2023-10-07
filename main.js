@@ -80,5 +80,5 @@ function send_data(id) {
         title: card_person_id.first_name,
    }
 
-   tg.send_data(JSON.stringify(data));
+   tg.sendData(JSON.stringify(data));
 }
