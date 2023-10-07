@@ -13,8 +13,8 @@ let category = [
                 card_img: './assets/psycology/Dan Siegel.jpg'
             },
             {
-                first_name: 'Jordan peterson',
-                card_img: './assets/psycology/Jordan peterson.jpeg'
+                first_name: 'Jordan Peterson',
+                card_img: './assets/psycology/Jordan Peterson.jpeg'
             },
             {
                 first_name: 'Kirk Honda',
@@ -55,7 +55,7 @@ let category = [
     },
     {
         id: 3,
-        title: "Healt",
+        title: "Health",
         img: './assets/health.png',
         card: [
             {
