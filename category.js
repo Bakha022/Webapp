@@ -2,7 +2,7 @@ let category = [
     {
         id: 1,
         title: "Psycology",
-        img:  './assets/psycology.png',
+        img: './assets/psycology.png',
         card: [
             {
                 card_id: 1,
